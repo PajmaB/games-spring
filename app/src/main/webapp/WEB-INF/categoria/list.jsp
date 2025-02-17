@@ -15,7 +15,7 @@
                     <tr>
                         <th>Id</th>
                         <th>Nome</th>
-                        <th>&nbdp;</th>
+                        <th>&nbsp;</th>
                     </tr>
                     <c:forEach var="item" items="${categorias}">
                         <tr>
