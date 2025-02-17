@@ -9,15 +9,16 @@
     </head>
     <body>
         <div class="container">
-            <h1>Categorias</h1>
-                <a href="/categoria/insert" class="btn btn-primary">Novo Categoria</a>
-                <table class="table">
-                    <tr>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>&nbsp;</th>
-                    </tr>
-                </table>
+            <h1>Nova Categoria</h1>
+            <form action="/categoria/insert" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" class="form-control" /> 
+                </div>
+                <br />
+                <a href="/categoria/list" class="btn btn-primary" > voltar</a>
+                <button type="submit" class="btn btn-sucess">Salvar</button>
+            </form>
         </div>
     </body>
 </html>
