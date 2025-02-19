@@ -16,9 +16,9 @@
                     <input type="text" name="nome" class="form-control" /> 
                 </div>
                 <br />
-                <a href="/categoria/list" class="btn btn-primary" > voltar</a>
+                <a href="/categoria/list" class="btn btn-primary" >Voltar</a>
                 <button type="submit" class="btn btn-sucess">Salvar</button>
             </form>
         </div>
     </body>
-</html>
+</html>+_
