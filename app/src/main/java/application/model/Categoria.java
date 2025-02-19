@@ -1,4 +1,5 @@
 package application.model;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,7 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.GEneratedValue;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.OneToMany;
 
 
@@ -17,7 +18,7 @@ import jakarta.persistence.OneToMany;
 public class Categoria{
     @Id
     @GeneratedValue (strategy =GenerationType.IDENTITY)
-    private Long id;
+    private long id;
     @Column (unique=true, nullable=false)
     private String nome;
     
@@ -40,13 +41,11 @@ public class Categoria{
         this.nome = nome;
     }
 
-    public Set{Jogo} getJogos(){
+    public Set<Jogo> getJogos(){
         return jogos;
     }
 
     public void setJogos(Set<Jogo> jogos){
         this.jogos = jogos;
     }
-
-    
 }
