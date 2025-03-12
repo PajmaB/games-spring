@@ -6,6 +6,9 @@
         <title>Home</title>
     </head>
     <body>
+        <table>
+            <td><a href="categoria/list">Categoria</a></td>
+        </table>
         <h1>Olá Spring!!!</h1>
     </body>
 </html>
