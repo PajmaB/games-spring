@@ -9,6 +9,9 @@
     </head>
     <body>
         <div class="container">
+            <table>
+                <td><a href="https://8080-pajmab-gamesspring-w8dslaaopjk.ws-us118.gitpod.io/">Home</a></td>
+            </table>
             <h1>Jogos</h1>
                 <a href="/jogo/insert" class="btn btn-primary">Novo Jogo</a>
                 <table class="table">

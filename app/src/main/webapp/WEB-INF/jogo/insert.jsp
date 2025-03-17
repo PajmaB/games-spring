@@ -12,8 +12,8 @@
             <h1>Novo Jogo</h1>
             <form action="/jogo/insert" method="post">
                 <div class="form-group">
-                    <label for="nome">TItulo:</label>
-                    <input type="text" name="nome" class="form-control">
+                    <label for="nome">Titulo:</label>
+                    <input type="text" name="titulo" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="categoria">Categoria</label>
@@ -34,7 +34,7 @@
                 </div>
                 <br>
                 <a href="/jogo/list" class="btn btn-primary">Voltar</a>
-                <button type="submit" class="btn btn-sucess">Salvar</button>
+                <button type="submit" class="btn btn-success">Salvar</button>
             </form>
         </div>
     </body>

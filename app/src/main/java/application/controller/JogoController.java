@@ -28,10 +28,11 @@ public class JogoController {
     private PlataformaRepository plataformaRepo;
 
     @RequestMapping("/list")
-    public String insert(Model ui) {
-        ui.addAttribute("categorias", categoriaRepo.findAll());
-        ui.addAttribute("plataformas", plataformaRepo.findAll());
-        return "jogo/insert";
+    public String list(Model ui) {
+    ui.addAttribute("jogos", jogoRepo.findAll()); // Adiciona os jogos ao Model
+    ui.addAttribute("categorias", categoriaRepo.findAll());
+    ui.addAttribute("plataformas", plataformaRepo.findAll());
+    return "jogo/list";
     }
     
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
@@ -51,6 +52,13 @@ public class JogoController {
         }
         jogoRepo.save(jogo);
         return "redirect:/jogo/list";
+    }
+    
+    @RequestMapping(value = "/insert", method = RequestMethod.GET)
+    public String novoJogo(Model ui) {
+        ui.addAttribute("categorias", categoriaRepo.findAll());
+        ui.addAttribute("plataformas", plataformaRepo.findAll());
+        return "jogo/insert";
     }
 
     @RequestMapping("/update")

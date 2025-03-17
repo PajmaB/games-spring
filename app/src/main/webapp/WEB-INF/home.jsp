@@ -8,6 +8,8 @@
     <body>
         <table>
             <td><a href="categoria/list">Categoria</a></td>
+            <td><a href="jogo/list">Jogo</a></td>
+            <td><a href="plataforma/list">Plataforma</a></td>
         </table>
         <h1>Olá Spring!!!</h1>
     </body>
